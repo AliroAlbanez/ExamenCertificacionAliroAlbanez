@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.ItemFragment" >
+
+    <ImageView
+        android:id="@+id/imageViewObject"
+        android:layout_width="269dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewObject"
+        tools:layout_editor_absoluteX="7dp">
+
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/botonConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Consultar"
+            app:icon="@drawable/mail"
+            app:iconGravity="textEnd" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
